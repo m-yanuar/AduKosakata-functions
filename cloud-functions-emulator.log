@@ -1,0 +1,60 @@
+2018-04-05T03:38:17.327Z - info: User function triggered, starting execution
+2018-04-05T03:38:17.332Z - info: Function crashed
+TypeError: Cannot read property 'params' of undefined
+    at exports.findmatch.functions.database.ref.onUpdate (G:\Project\fb-functions\functions\index.js:19:31)
+    at Object.<anonymous> (G:\Project\fb-functions\functions\node_modules\firebase-functions\lib\cloud-functions.js:59:27)
+    at Generator.next (<anonymous>)
+    at G:\Project\fb-functions\functions\node_modules\firebase-functions\lib\cloud-functions.js:28:71
+    at new Promise (<anonymous>)
+    at __awaiter (G:\Project\fb-functions\functions\node_modules\firebase-functions\lib\cloud-functions.js:24:12)
+    at cloudFunction (G:\Project\fb-functions\functions\node_modules\firebase-functions\lib\cloud-functions.js:53:36)
+    at Promise.resolve.then (C:\Users\Payjoe\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\@google-cloud\functions-emulator\src\supervisor\worker.js:148:27)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+2018-04-05T03:40:11.244Z - info: User function triggered, starting execution
+2018-04-05T03:40:11.251Z - info: Function crashed
+2018-04-05T03:40:11.252Z - info: ReferenceError: context is not defined
+    at exports.findmatch.functions.database.ref.onUpdate (G:\Project\fb-functions\functions\index.js:19:23)
+    at Object.<anonymous> (G:\Project\fb-functions\functions\node_modules\firebase-functions\lib\cloud-functions.js:59:27)
+    at Generator.next (<anonymous>)
+    at G:\Project\fb-functions\functions\node_modules\firebase-functions\lib\cloud-functions.js:28:71
+    at new Promise (<anonymous>)
+    at __awaiter (G:\Project\fb-functions\functions\node_modules\firebase-functions\lib\cloud-functions.js:24:12)
+    at cloudFunction (G:\Project\fb-functions\functions\node_modules\firebase-functions\lib\cloud-functions.js:53:36)
+    at Promise.resolve.then (C:\Users\Payjoe\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\@google-cloud\functions-emulator\src\supervisor\worker.js:148:27)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+2018-04-05T03:40:21.621Z - info: User function triggered, starting execution
+2018-04-05T03:40:25.789Z - error: FIREBASE WARNING: Exception was thrown by user callback. ReferenceError: context is not defined
+    at G:\Project\fb-functions\functions\index.js:22:36
+    at c (G:\Project\fb-functions\functions\node_modules\firebase-admin\lib\database\database.js:207:58)
+    at G:\Project\fb-functions\functions\node_modules\firebase-admin\lib\database\database.js:185:831
+    at tc (G:\Project\fb-functions\functions\node_modules\firebase-admin\lib\database\database.js:77:165)
+    at le (G:\Project\fb-functions\functions\node_modules\firebase-admin\lib\database\database.js:112:215)
+    at me (G:\Project\fb-functions\functions\node_modules\firebase-admin\lib\database\database.js:111:632)
+    at Object.G (G:\Project\fb-functions\functions\node_modules\firebase-admin\lib\database\database.js:240:93)
+    at G:\Project\fb-functions\functions\node_modules\firebase-admin\lib\database\database.js:223:503
+    at kh.h.ud (G:\Project\fb-functions\functions\node_modules\firebase-admin\lib\database\database.js:228:104)
+    at hg.ud (G:\Project\fb-functions\functions\node_modules\firebase-admin\lib\database\database.js:175:364) 
+2018-04-05T03:40:25.814Z - error: G:\Project\fb-functions\functions\node_modules\firebase-admin\lib\database\database.js:77
+(d="0"+d),c+=d;return c.toLowerCase()}var sc=/^-?\d{1,10}$/;function mc(a){return sc.test(a)&&(a=Number(a),-2147483648<=a&&2147483647>=a)?a:null}function tc(a){try{a()}catch(b){setTimeout(function(){M("Exception was thrown by user callback.",b.stack||"");throw b;},Math.floor(0))}}function uc(a,b,c){Object.defineProperty(a,b,{get:c})}function vc(a,b){var c=setTimeout(a,b);"object"===typeof c&&c.unref&&c.unref();return c};function wc(a){var b={},c={},d={},e="";try{var f=a.split("."),b=eb($b(f[0])||""),c=eb($b(f[1])||""),e=f[2],d=c.d||{};delete c.d}catch(g){}return{yg:b,He:c,data:d,og:e}}function xc(a){a=wc(a);var b=a.He;return!!a.og&&!!b&&"object"===typeof b&&b.hasOwnProperty("iat")}function yc(a){a=wc(a).He;return"object"===typeof a&&!0===B(a,"admin")};function G(a,b){if(1==arguments.length){this.o=a.split("/");for(var c=0,d=0;d<this.o.length;d++)0<this.o[d].length&&(this.o[c]=this.o[d],c++);this.o.length=c;this.Y=0}els
+
+ReferenceError: context is not defined
+    at G:\Project\fb-functions\functions\index.js:22:36
+    at c (G:\Project\fb-functions\functions\node_modules\firebase-admin\lib\database\database.js:207:58)
+    at G:\Project\fb-functions\functions\node_modules\firebase-admin\lib\database\database.js:185:831
+    at tc (G:\Project\fb-functions\functions\node_modules\firebase-admin\lib\database\database.js:77:165)
+    at le (G:\Project\fb-functions\functions\node_modules\firebase-admin\lib\database\database.js:112:215)
+    at me (G:\Project\fb-functions\functions\node_modules\firebase-admin\lib\database\database.js:111:632)
+    at Object.G (G:\Project\fb-functions\functions\node_modules\firebase-admin\lib\database\database.js:240:93)
+    at G:\Project\fb-functions\functions\node_modules\firebase-admin\lib\database\database.js:223:503
+    at kh.h.ud (G:\Project\fb-functions\functions\node_modules\firebase-admin\lib\database\database.js:228:104)
+    at hg.ud (G:\Project\fb-functions\functions\node_modules\firebase-admin\lib\database\database.js:175:364)
+2018-04-05T03:40:25.826Z - info: Execution took 5275 ms, finished with status: 'crash'
+2018-04-05T03:40:25.896Z - error: Function worker crashed with exit code: 1
+2018-04-05T03:40:41.657Z - info: User function triggered, starting execution
+2018-04-05T03:40:44.220Z - info: match id: findMatchID8
+2018-04-05T03:40:44.234Z - info: Execution took 2576 ms, user function completed successfully
+2018-04-05T03:41:45.947Z - info: User function triggered, starting execution
+2018-04-05T03:41:46.221Z - info: match id: findMatchID7
+2018-04-05T03:41:46.223Z - info: Execution took 275 ms, user function completed successfully
